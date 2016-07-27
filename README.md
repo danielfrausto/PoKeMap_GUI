@@ -6,3 +6,5 @@ If you get an error after setting Python and PoGoMap Directory simply restart ap
 
 # If you Do NOT want to deal with Source files.
 You can download the release from Release <a href="https://github.com/danielfrausto/PoKeMap_GUI/releases/download/0.0.1/PoKeMapV6.exe">Section </a>
+#Remember!
+to SetUp your Google API Key in Config>Config.json (This Will be implemented Soon)
