@@ -45,7 +45,7 @@
     Dim uPwd = ""
     Dim uLocation = ""
     Dim Steps = ""
-    Private Sub SetVars()
+    Public Sub SetVars()
         PythonDir = My.Settings.PythonDir
         PipDir = My.Settings.PipDir
         PokeMapDir = My.Settings.PokeMapDir
@@ -54,7 +54,7 @@
         'Steps = My.Settings.Steps + 1
         Steps = cb_Steps.Text
     End Sub
-    Private Sub SetLocation()
+    Public Sub SetLocation()
         txt_uLocation.Text = uLocation
     End Sub
     Private Sub SetLogIn()
@@ -217,6 +217,9 @@
         End If
         My.Settings.RememberMe = xBox_rMe.Checked
         My.Settings.Save()
+
+        KillPython()
+
     End Sub
 
     Private Sub F_O_A_F_ALL_Click(sender As Object, e As EventArgs) Handles F_O_A_F_ALL.Click
@@ -251,7 +254,7 @@
 
 
         arg = ScriptName & " -a " & aType & " -u " & uName & " -p " & uPwd & " -l " & """" & uLocation & """" & " -st " & Steps
-        MsgBox(arg)
+        ' MsgBox(arg)
 
 
         'Dim tx As New TextBox

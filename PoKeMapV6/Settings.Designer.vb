@@ -35,16 +35,18 @@ Partial Class Settings
         Me.fbd = New System.Windows.Forms.FolderBrowserDialog()
         Me.ofd = New System.Windows.Forms.OpenFileDialog()
         Me.btn_ClearSettings = New System.Windows.Forms.Button()
+        Me.btn_Done = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btn_Settings_Show
         '
-        Me.btn_Settings_Show.Location = New System.Drawing.Point(412, 119)
+        Me.btn_Settings_Show.Location = New System.Drawing.Point(226, 118)
         Me.btn_Settings_Show.Name = "btn_Settings_Show"
         Me.btn_Settings_Show.Size = New System.Drawing.Size(75, 23)
         Me.btn_Settings_Show.TabIndex = 0
         Me.btn_Settings_Show.Text = "Show"
         Me.btn_Settings_Show.UseVisualStyleBackColor = True
+        Me.btn_Settings_Show.Visible = False
         '
         'txt_pythonDir
         '
@@ -134,11 +136,21 @@ Partial Class Settings
         Me.btn_ClearSettings.Text = "Clear"
         Me.btn_ClearSettings.UseVisualStyleBackColor = True
         '
+        'btn_Done
+        '
+        Me.btn_Done.Location = New System.Drawing.Point(412, 118)
+        Me.btn_Done.Name = "btn_Done"
+        Me.btn_Done.Size = New System.Drawing.Size(75, 23)
+        Me.btn_Done.TabIndex = 11
+        Me.btn_Done.Text = "Done"
+        Me.btn_Done.UseVisualStyleBackColor = True
+        '
         'Settings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(500, 153)
+        Me.Controls.Add(Me.btn_Done)
         Me.Controls.Add(Me.btn_ClearSettings)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -170,4 +182,5 @@ Partial Class Settings
     Friend WithEvents fbd As FolderBrowserDialog
     Friend WithEvents ofd As OpenFileDialog
     Friend WithEvents btn_ClearSettings As Button
+    Friend WithEvents btn_Done As Button
 End Class

@@ -13,3 +13,4 @@ C:\Users\PX\Documents\Visual Studio 2015\Projects\PoKeMapV6\PoKeMapV6\bin\Debug\
 C:\Users\PX\Documents\Visual Studio 2015\Projects\PoKeMapV6\PoKeMapV6\bin\Debug\PoKeMapV6.application
 C:\Users\PX\Documents\Visual Studio 2015\Projects\PoKeMapV6\PoKeMapV6\obj\Debug\PoKeMapV6.exe.manifest
 C:\Users\PX\Documents\Visual Studio 2015\Projects\PoKeMapV6\PoKeMapV6\obj\Debug\PoKeMapV6.application
+C:\Users\PX\Documents\Visual Studio 2015\Projects\PoKeMapV6\PoKeMapV6\obj\Debug\PoKeMapV6.vbprojResolveAssemblyReference.cache

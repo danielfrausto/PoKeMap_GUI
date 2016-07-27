@@ -49,4 +49,9 @@
         My.Settings.PokeMapDir = ""
         My.Settings.Save()
     End Sub
+
+    Private Sub btn_Done_Click(sender As Object, e As EventArgs) Handles btn_Done.Click
+        Form1.SetVars()
+        Form1.SetLocation()
+    End Sub
 End Class
