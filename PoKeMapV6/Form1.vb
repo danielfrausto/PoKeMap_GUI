@@ -1,5 +1,10 @@
-﻿Public Class Form1
+﻿Imports System.IO
+Imports System.Security
+Imports Microsoft.Win32
+
+Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        SetBrowserEmulationMode()
         ' wb.Navigate("https://www.google.com/ncr")
 
 
@@ -56,17 +61,26 @@
         Steps = cb_Steps.Text
     End Sub
     Public Sub SetLocation()
+        My.Settings.uLocation = txt_uLocation.Text
+        SaveSettings()
+        uLocation = txt_uLocation.Text
         txt_uLocation.Text = uLocation
     End Sub
     Private Sub SetLogIn()
         Select Case cb_aType.SelectedIndex
             Case 0
+                My.Settings.ggl_uName = txt_uName.Text
+                My.Settings.ggl_uPwd = txt_uPwd.Text
+                SaveSettings()
                 uName = My.Settings.ggl_uName
                 uPwd = My.Settings.ggl_uPwd
                 txt_uName.Text = My.Settings.ggl_uName
                 txt_uPwd.Text = My.Settings.ggl_uPwd
                 aType = "google"
             Case 1
+                My.Settings.ptc_uName = txt_uName.Text
+                My.Settings.ptc_uPwd = txt_uPwd.Text
+                SaveSettings()
                 uName = My.Settings.ptc_uName
                 uPwd = My.Settings.ptc_uPwd
                 txt_uName.Text = My.Settings.ptc_uName
@@ -206,6 +220,9 @@
     Private Sub btn_Go_Click(sender As Object, e As EventArgs) Handles btn_Go.Click
         '   MsgBox(xBox_rMe.Checked)
         ' RememberMe()
+        ' SetVars()
+        SetLogIn()
+        SetLocation()
         GetPoke()
     End Sub
 
@@ -286,7 +303,7 @@
     End Sub
 
     Private Sub File_StopServer_Click(sender As Object, e As EventArgs) Handles File_StopServer.Click
-        KillPython
+        KillPython()
     End Sub
     Private Sub KillPython()
         Try
@@ -307,4 +324,20 @@
         End Try
 
     End Sub
+
+    Private Sub SetBrowserFeatureControlKey(feature As String, appName As String, value As UInteger)
+        Using key = Registry.CurrentUser.CreateSubKey([String].Concat("Software\Microsoft\Internet Explorer\Main\FeatureControl\", feature), RegistryKeyPermissionCheck.ReadWriteSubTree)
+            key.SetValue(appName, DirectCast(value, UInt32), RegistryValueKind.DWord)
+        End Using
+    End Sub
+    Public Sub SetBrowserEmulationMode()
+        Dim fileName = System.IO.Path.GetFileName(Process.GetCurrentProcess().MainModule.FileName)
+
+        If [String].Compare(fileName, "devenv.exe", True) = 0 OrElse [String].Compare(fileName, "XDesProc.exe", True) = 0 Then
+            Return
+        End If
+        Dim mode As UInt32 = 10000
+        SetBrowserFeatureControlKey("FEATURE_BROWSER_EMULATION", fileName, mode)
+    End Sub
+
 End Class

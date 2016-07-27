@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PoKeMapV6.exe" size="784784">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PoKeMapV6.exe" size="785808">
       <assemblyIdentity name="PoKeMapV6" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>gyhYlQQzmBLVExMkTNlmfb3J221/yZWQSome7EnxZso=</dsig:DigestValue>
+        <dsig:DigestValue>8EsD3l8lUE5ZNzMwrCy6yePC4OH8t8BaRgbfxf+LsOM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
