@@ -1,0 +1,15 @@
+C:\Users\PX\Documents\Visual Studio 2015\Projects\PoKeMapV6\PoKeMapV6\bin\Debug\PoKeMapV6.exe.config
+C:\Users\PX\Documents\Visual Studio 2015\Projects\PoKeMapV6\PoKeMapV6\bin\Debug\PoKeMapV6.exe
+C:\Users\PX\Documents\Visual Studio 2015\Projects\PoKeMapV6\PoKeMapV6\bin\Debug\PoKeMapV6.pdb
+C:\Users\PX\Documents\Visual Studio 2015\Projects\PoKeMapV6\PoKeMapV6\bin\Debug\PoKeMapV6.xml
+C:\Users\PX\Documents\Visual Studio 2015\Projects\PoKeMapV6\PoKeMapV6\obj\Debug\PoKeMapV6.Form1.resources
+C:\Users\PX\Documents\Visual Studio 2015\Projects\PoKeMapV6\PoKeMapV6\obj\Debug\PoKeMapV6.Resources.resources
+C:\Users\PX\Documents\Visual Studio 2015\Projects\PoKeMapV6\PoKeMapV6\obj\Debug\PoKeMapV6.Settings.resources
+C:\Users\PX\Documents\Visual Studio 2015\Projects\PoKeMapV6\PoKeMapV6\obj\Debug\PoKeMapV6.vbproj.GenerateResource.Cache
+C:\Users\PX\Documents\Visual Studio 2015\Projects\PoKeMapV6\PoKeMapV6\obj\Debug\PoKeMapV6.exe
+C:\Users\PX\Documents\Visual Studio 2015\Projects\PoKeMapV6\PoKeMapV6\obj\Debug\PoKeMapV6.xml
+C:\Users\PX\Documents\Visual Studio 2015\Projects\PoKeMapV6\PoKeMapV6\obj\Debug\PoKeMapV6.pdb
+C:\Users\PX\Documents\Visual Studio 2015\Projects\PoKeMapV6\PoKeMapV6\bin\Debug\PoKeMapV6.exe.manifest
+C:\Users\PX\Documents\Visual Studio 2015\Projects\PoKeMapV6\PoKeMapV6\bin\Debug\PoKeMapV6.application
+C:\Users\PX\Documents\Visual Studio 2015\Projects\PoKeMapV6\PoKeMapV6\obj\Debug\PoKeMapV6.exe.manifest
+C:\Users\PX\Documents\Visual Studio 2015\Projects\PoKeMapV6\PoKeMapV6\obj\Debug\PoKeMapV6.application
