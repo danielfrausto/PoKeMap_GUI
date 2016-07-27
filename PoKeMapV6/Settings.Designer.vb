@@ -38,11 +38,14 @@ Partial Class Settings
         Me.btn_Done = New System.Windows.Forms.Button()
         Me.cb_MapVer = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.btn_SetApiKey = New System.Windows.Forms.Button()
+        Me.txt_ApiKey = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btn_Settings_Show
         '
-        Me.btn_Settings_Show.Location = New System.Drawing.Point(226, 118)
+        Me.btn_Settings_Show.Location = New System.Drawing.Point(147, 228)
         Me.btn_Settings_Show.Name = "btn_Settings_Show"
         Me.btn_Settings_Show.Size = New System.Drawing.Size(75, 23)
         Me.btn_Settings_Show.TabIndex = 0
@@ -131,7 +134,7 @@ Partial Class Settings
         '
         'btn_ClearSettings
         '
-        Me.btn_ClearSettings.Location = New System.Drawing.Point(12, 118)
+        Me.btn_ClearSettings.Location = New System.Drawing.Point(12, 228)
         Me.btn_ClearSettings.Name = "btn_ClearSettings"
         Me.btn_ClearSettings.Size = New System.Drawing.Size(75, 23)
         Me.btn_ClearSettings.TabIndex = 10
@@ -140,7 +143,7 @@ Partial Class Settings
         '
         'btn_Done
         '
-        Me.btn_Done.Location = New System.Drawing.Point(412, 118)
+        Me.btn_Done.Location = New System.Drawing.Point(413, 228)
         Me.btn_Done.Name = "btn_Done"
         Me.btn_Done.Size = New System.Drawing.Size(75, 23)
         Me.btn_Done.TabIndex = 11
@@ -167,11 +170,40 @@ Partial Class Settings
         Me.Label4.TabIndex = 13
         Me.Label4.Text = "MapVer : "
         '
+        'btn_SetApiKey
+        '
+        Me.btn_SetApiKey.Enabled = False
+        Me.btn_SetApiKey.Location = New System.Drawing.Point(412, 121)
+        Me.btn_SetApiKey.Name = "btn_SetApiKey"
+        Me.btn_SetApiKey.Size = New System.Drawing.Size(75, 23)
+        Me.btn_SetApiKey.TabIndex = 14
+        Me.btn_SetApiKey.Text = "Set"
+        Me.btn_SetApiKey.UseVisualStyleBackColor = True
+        '
+        'txt_ApiKey
+        '
+        Me.txt_ApiKey.Location = New System.Drawing.Point(122, 123)
+        Me.txt_ApiKey.Name = "txt_ApiKey"
+        Me.txt_ApiKey.Size = New System.Drawing.Size(284, 20)
+        Me.txt_ApiKey.TabIndex = 15
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(12, 126)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(52, 13)
+        Me.Label5.TabIndex = 16
+        Me.Label5.Text = "Api Key : "
+        '
         'Settings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(500, 153)
+        Me.ClientSize = New System.Drawing.Size(500, 263)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.txt_ApiKey)
+        Me.Controls.Add(Me.btn_SetApiKey)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.cb_MapVer)
         Me.Controls.Add(Me.btn_Done)
@@ -209,4 +241,7 @@ Partial Class Settings
     Friend WithEvents btn_Done As Button
     Friend WithEvents cb_MapVer As ComboBox
     Friend WithEvents Label4 As Label
+    Friend WithEvents btn_SetApiKey As Button
+    Friend WithEvents txt_ApiKey As TextBox
+    Friend WithEvents Label5 As Label
 End Class

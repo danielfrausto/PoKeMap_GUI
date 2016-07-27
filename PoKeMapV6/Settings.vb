@@ -1,4 +1,6 @@
-﻿Public Class Settings
+﻿Imports System.IO
+
+Public Class Settings
     Private Sub btn_PYTHONset_Click(sender As Object, e As EventArgs) Handles btn_PYTHONset.Click
         Dim result As DialogResult = fbd.ShowDialog()
         ' fbd.ShowDialog()
@@ -70,6 +72,9 @@
 
     Private Sub cb_MapVer_DropDownClosed(sender As Object, e As EventArgs) Handles cb_MapVer.DropDownClosed
         SaveSettings()
+        If cb_MapVer.SelectedIndex = 2 Then
+            btn_SetApiKey.Enabled = True
+        End If
     End Sub
 
     Private Sub SaveSettings()
@@ -80,4 +85,29 @@
     Private Sub Settings_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         SaveSettings()
     End Sub
+
+    Private Sub btn_SetApiKey_Click(sender As Object, e As EventArgs) Handles btn_SetApiKey.Click
+
+        If Not txt_ApiKey.Text = "" Then
+
+            SetApiKey()
+        End If
+    End Sub
+
+    Private Sub SetApiKey()
+        Dim CreDir = txt_pokemapDir.Text & "\Config\"
+        Dim ApiKey = txt_ApiKey.Text
+        Dim Credentials = "{
+	""gmaps_key"" : """ & ApiKey & """
+}"
+        Dim fsStream As New FileStream(CreDir & "credentials.json", FileMode.Create, FileAccess.Write)
+        Dim swWriter As New StreamWriter(fsStream)
+        Try
+            swWriter.WriteLine(Credentials)
+            swWriter.Close()
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
 End Class
