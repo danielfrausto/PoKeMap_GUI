@@ -185,6 +185,18 @@ Namespace My
                 Me("RememberMe") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property MapVer() As Integer
+            Get
+                Return CType(Me("MapVer"),Integer)
+            End Get
+            Set
+                Me("MapVer") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

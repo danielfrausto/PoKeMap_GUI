@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PoKeMapV6.exe" size="783248">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PoKeMapV6.exe" size="784784">
       <assemblyIdentity name="PoKeMapV6" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>DMH7x4wSCU3mR33AqP/WW9P2BZx+WR5e+ufu+zy4NO8=</dsig:DigestValue>
+        <dsig:DigestValue>gyhYlQQzmBLVExMkTNlmfb3J221/yZWQSome7EnxZso=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -63,13 +63,13 @@
       <dsig:DigestValue>G1PYUuvpnc10M1loyHOPdcqTg6rMIOJUBlc9WJl5gMk=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="PoKeMapV6.exe.config" size="2011">
+  <file name="PoKeMapV6.exe.config" size="2127">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>r8hmJ1KjCh4xY7yy9W2JD8y1aDigEZiOJAceLp1rt24=</dsig:DigestValue>
+      <dsig:DigestValue>JssHPqKI35zkl9jFSxa48xuaNin8qg1qs+kvpij4ux0=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

@@ -36,6 +36,8 @@ Partial Class Settings
         Me.ofd = New System.Windows.Forms.OpenFileDialog()
         Me.btn_ClearSettings = New System.Windows.Forms.Button()
         Me.btn_Done = New System.Windows.Forms.Button()
+        Me.cb_MapVer = New System.Windows.Forms.ComboBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btn_Settings_Show
@@ -145,11 +147,33 @@ Partial Class Settings
         Me.btn_Done.Text = "Done"
         Me.btn_Done.UseVisualStyleBackColor = True
         '
+        'cb_MapVer
+        '
+        Me.cb_MapVer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cb_MapVer.Enabled = False
+        Me.cb_MapVer.FormattingEnabled = True
+        Me.cb_MapVer.Items.AddRange(New Object() {". . .", "V1.0", "V2.0"})
+        Me.cb_MapVer.Location = New System.Drawing.Point(341, 96)
+        Me.cb_MapVer.Name = "cb_MapVer"
+        Me.cb_MapVer.Size = New System.Drawing.Size(65, 21)
+        Me.cb_MapVer.TabIndex = 12
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(282, 99)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(53, 13)
+        Me.Label4.TabIndex = 13
+        Me.Label4.Text = "MapVer : "
+        '
         'Settings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(500, 153)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.cb_MapVer)
         Me.Controls.Add(Me.btn_Done)
         Me.Controls.Add(Me.btn_ClearSettings)
         Me.Controls.Add(Me.Label3)
@@ -183,4 +207,6 @@ Partial Class Settings
     Friend WithEvents ofd As OpenFileDialog
     Friend WithEvents btn_ClearSettings As Button
     Friend WithEvents btn_Done As Button
+    Friend WithEvents cb_MapVer As ComboBox
+    Friend WithEvents Label4 As Label
 End Class

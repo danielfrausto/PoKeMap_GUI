@@ -49,6 +49,7 @@
         PythonDir = My.Settings.PythonDir
         PipDir = My.Settings.PipDir
         PokeMapDir = My.Settings.PokeMapDir
+        MapVer = My.Settings.MapVer
         SetLogIn()
         uLocation = My.Settings.uLocation
         'Steps = My.Settings.Steps + 1
